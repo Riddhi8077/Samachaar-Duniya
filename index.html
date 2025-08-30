@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samachaar Duniya | Latest News</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>#news-container{display:none}</style>
+</script>
+<style>
+  #news-container {
+    display: block;
+    margin: 20px 0;
+  }
+
+  .news-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.news-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+</style>
+</head>
+<body>
+
+<!-- =========================
+       TOP DATE & TIME BAR
+========================= -->
+<div class="date-time-bar">
+  <span id="liveDate"></span> | <span id="liveTime"></span>
+</div>
+
+  <!-- HEADER + BREAKING NEWS WRAPPER -->
+<div class="header-wrapper">
+  <header>
+    <div class="top-bar">
+      <img src="images/logo.png" alt="Samachaar Duniya Logo" class="logo">
+<button class="menu-toggle">&#9776;</button>
+<nav class="navbar">
+   <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="category.html?category=World">World</a></li>
+    <li><a href="category.html?category=Politics">Politics</a></li>
+    <li><a href="category.html?category=Sports">Sports</a></li>
+    <li><a href="category.html?category=Entertainment">Entertainment</a></li>
+    <li><a href="category.html?category=Technology">Technology</a></li>
+  </ul>
+</nav>
+
+<!-- Search Icon (visible on mobile only) -->
+<button type="button" class="search-toggle" aria-label="Search">
+  <i class="fas fa-search"></i>
+</button>
+
+<!-- Search Bar -->
+<form class="search-form">
+  <input type="text" placeholder="Search news..." id="searchInput">
+  <button type="submit"><i class="fas fa-search"></i></button>
+</form>
+
+    <!-- Dark Mode Toggle -->
+<button class="dark-mode-toggle" id="darkModeToggle">🌙</button>
+
+  </div>
+</header>
+</div>
+
+<!-- =========================
+       BREAKING NEWS TICKER
+========================= -->
+<div class="breaking-news-bar">
+  <span class="breaking-label">Breaking:</span>
+  <marquee behavior="scroll" direction="left">
+    India Wins Test Series 3-1 against Australia |
+    Stock Markets Rally Amid Economic Recovery |
+    Bollywood’s New Blockbuster Crosses 100 Cr |
+    Heavy Rainfall Expected in North India |
+    AI Revolution: Big Tech Companies Compete
+  </marquee>
+</div>
+
+<!-- HERO SECTION -->
+  <section class="hero">
+    <img src="images/banner.jpg" alt="Top News Banner">
+    <div class="headline">
+      <h1>Breaking: Major Political Update Shakes the Nation</h1>
+      <p>Stay updated with the latest breaking news and insights from across the globe.</p>
+    </div>
+  </section>
+
+  <!-- CATEGORY TABS -->
+<section class="category-tabs">
+  <button class="tab-button active" data-category="all">All</button>
+  <button class="tab-button" data-category="world">World</button>
+  <button class="tab-button" data-category="sports">Sports</button>
+  <button class="tab-button" data-category="entertainment">Entertainment</button>
+  <button class="tab-button" data-category="technology">Technology</button>
+</section>
+
+<h2>Latest News</h2>
+<div id="news-container" class="news-grid"></div>
+
+
+<!-- MAIN CONTENT AREA -->
+<main class="main-content">
+
+  <!-- LEFT: News Grid -->
+    <section class="news-grid" id="newsGrid">
+
+
+    <article data-category="sports">
+      <a href="news-details.html">
+        <img src="images/news1.webp" alt="News 1">
+        <h2 class="news-title">Sports: India Wins the Test Series</h2>
+        <p>Team India makes a historic win with record-breaking performance in the final test match...</p>
+      </a>
+    </article>
+
+    <article data-category="entertainment">
+      <a href="news-details.html">
+        <img src="images/news2.webp" alt="News 2">
+        <h2 class="news-title">Entertainment: New Blockbuster Movie Released</h2>
+        <p>The latest Bollywood release sets box office records on its opening weekend...</p>
+      </a>
+    </article>
+
+    <article data-category="technology">
+      <a href="news-details.html">
+        <img src="images/news3.webp" alt="News 3">
+        <h2 class="news-title">Technology: AI Revolution in 2025</h2>
+        <p>Experts predict AI will change the future of work and business forever...</p>
+      </a>
+    </article>
+
+    <article data-category="sports">
+      <a href="news-details.html">
+        <img src="images/news1.webp" alt="News 1">
+        <h2 class="news-title">Sports: India Wins the Test Series</h2>
+        <p>Team India makes a historic win with record-breaking performance in the final test match...</p>
+      </a>
+    </article>
+
+    <article data-category="entertainment">
+      <a href="news-details.html">
+        <img src="images/news2.webp" alt="News 2">
+        <h2 class="news-title">Entertainment: New Blockbuster Movie Released</h2>
+        <p>The latest Bollywood release sets box office records on its opening weekend...</p>
+      </a>
+    </article>
+
+    <article data-category="technology">
+      <a href="news-details.html">
+        <img src="images/news3.webp" alt="News 3">
+        <h2 class="news-title">Technology: AI Revolution in 2025</h2>
+        <p>Experts predict AI will change the future of work and business forever...</p>
+      </a>
+    </article>
+
+    <!-- Add more articles here -->
+
+    <article data-category="sports">
+      <a href="news-details.html">
+        <img src="images/news1.webp" alt="News 1">
+        <h2>Sports: India Wins the Test Series</h2>
+        <p>Team India makes a historic win with record-breaking performance in the final test match...</p>
+      </a>
+    </article>
+
+    <article data-category="entertainment">
+      <a href="news-details.html">
+        <img src="images/news2.webp" alt="News 2">
+        <h2>Entertainment: New Blockbuster Movie Released</h2>
+        <p>The latest Bollywood release sets box office records on its opening weekend...</p>
+      </a>
+    </article>
+
+    <article data-category="technology">
+      <a href="news-details.html">
+        <img src="images/news3.webp" alt="News 3">
+        <h2>Technology: AI Revolution in 2025</h2>
+        <p>Experts predict AI will change the future of work and business forever...</p>
+      </a>
+    </article>
+
+    <p id="noResults" style="display:none; text-align:center; margin-top:20px; font-weight:bold; color:#c00;">
+      No results found. Try another keyword.
+    </p>
+
+    <!-- Load More Button -->
+  <div class="load-more-container">
+      <button id="loadMoreBtn">Load More News</button>
+    </div>
+
+  </section>
+
+  <!-- RIGHT: Sidebar -->
+  <aside class="sidebar">
+
+    <!-- Trending News -->
+    <div class="sidebar-box">
+      <h3>🔥 Trending</h3>
+      <ul>
+        <li><a href="#">Breaking: PM Announces New Policy</a></li>
+        <li><a href="#">Tech Startups Raise Record Funding</a></li>
+        <li><a href="#">Sports: India’s T20 Squad Revealed</a></li>
+        <li><a href="#">Stock Market Closes at Record High</a></li>
+        <li><a href="#">Weather Alert: Heatwave Expected</a></li>
+      </ul>
+    </div>
+
+    <!-- Most Read -->
+    <div class="sidebar-box">
+      <h3>📖 Most Read</h3>
+      <ul>
+        <li><a href="#">AI Revolution in 2025</a></li>
+        <li><a href="#">India Wins Test Series 3-1</a></li>
+        <li><a href="#">Bollywood’s New Blockbuster</a></li>
+        <li><a href="#">Economic Growth Beats Estimates</a></li>
+        <li><a href="#">Tips to Stay Safe During Monsoon</a></li>
+      </ul>
+    </div>
+
+    <!-- Latest News -->
+    <div class="sidebar-box">
+      <h3>🆕 Latest</h3>
+      <ul>
+        <li><a href="#">New Tech IPO Launched Today</a></li>
+        <li><a href="#">ISRO Announces New Mission</a></li>
+        <li><a href="#">Rains Disrupt Metro Services</a></li>
+        <li><a href="#">Sports Council Updates Rankings</a></li>
+        <li><a href="#">Global Market Sees Small Dip</a></li>
+      </ul>
+    </div>
+
+  </aside>
+
+<!-- =========================
+     TOP STORIES SLIDER
+========================= -->
+<section class="top-stories">
+  <div class="swiper topStoriesSlider">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <img src="images/news1.webp" alt="Top Story 1">
+        <div class="slide-caption">
+          <h2>India Wins Historic Test Series 3-1 Against Australia</h2>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <img src="images/news2.webp" alt="Top Story 2">
+        <div class="slide-caption">
+          <h2>Bollywood Blockbuster Crosses 100 Crore Mark</h2>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <img src="images/news3.webp" alt="Top Story 3">
+        <div class="slide-caption">
+          <h2>AI Revolution: Big Tech Companies Compete</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <!-- Pagination Dots -->
+    <div class="swiper-pagination"></div>
+  </div>
+  </main>
+</section>
+
+<!-- =========================
+       FOOTER SECTION
+========================= -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- About Section -->
+    <div class="footer-column">
+      <h3>ℹ️ About Samachaar Duniya</h3>
+      <p>Your trusted source for the latest news 🌍 from around the globe. 
+         Covering 🏛️ Politics, 🏏 Sports, 🎬 Entertainment, 💻 Technology and more.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-column">
+      <h3>🔗 Quick Links</h3>
+      <ul>
+        <li><a href="#">🏠 Home</a></li>
+        <li><a href="#">🌎 World</a></li>
+        <li><a href="#">🗳️ Politics</a></li>
+        <li><a href="#">🏆 Sports</a></li>
+        <li><a href="#">🎭 Entertainment</a></li>
+        <li><a href="#">💡 Technology</a></li>
+      </ul>
+    </div>
+
+   <!-- Social Media -->
+<div class="footer-column">
+  <h3>📱 Follow Us</h3>
+  <div class="social-links">
+    <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+    <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+  </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>
+  © 2025 
+  <span id="openAdminPanelBtn" style="cursor:pointer; color:inherit; position:relative; z-index:999;">
+    Samachaar Duniya.
+  </span>
+  All rights reserved. ✨
+</p>
+
+<!-- =========================
+       BACK TO TOP BUTTON
+========================= -->
+<button id="backToTop" title="Go to top">⬆</button>
+  </div>
+</footer>
+
+<!-- =========================
+       BACK TO TOP BUTTON
+========================= -->
+<button id="backToTop" title="Go to top">⬆</button>
+
+<!-- =========================
+       NEWSLETTER POPUP
+========================= -->
+<div class="newsletter-modal" id="newsletterModal">
+  <div class="newsletter-content">
+    <span class="close-btn" id="closeNewsletter">&times;</span>
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Get the latest news delivered straight to your inbox!</p>
+    <form id="newsletterForm">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</div>
+
+<script>
+function toggleMenu() {
+  document.querySelector(".nav-links").classList.toggle("active");
+}
+</script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  document.querySelector('.menu-toggle')?.addEventListener('click', () => {
+    document.querySelector('.navbar .nav-links')?.classList.toggle('show');
+  });
+</script>
+
+<script>
+window.addEventListener('load', () => {
+  const btn = document.getElementById('openAdminPanelBtn');
+  if(!btn) return;
+
+  btn.addEventListener('click', (e) => {
+    // require Shift + Click
+    if(e.shiftKey){
+      window.location.href = './admin/login.html';
+    } else {
+      // harmless feedback for normal users
+      console.log('Admin access requires Shift + Click');
+    }
+  });
+});
+</script>
+
+<script>
+async function loadNews() {
+  try {
+    const response = await fetch("http://localhost:5000/api/news");
+    const data = await response.json();
+
+    const container = document.getElementById("news-container");
+    container.innerHTML = ""; // Clear old news
+
+    if (data.length === 0) {
+      container.innerHTML = "<p>No news available.</p>";
+      return;
+    }
+
+    data.forEach(item => {
+      const div = document.createElement("div");
+      div.classList.add("news-item");
+      div.innerHTML = `
+        <h3>${item.title}</h3>
+        <p>${item.content}</p>
+        <small>Category: ${item.category} | ${new Date(item.createdAt).toLocaleString()}</small>
+      `;
+      container.appendChild(div);
+    });
+
+  } catch (err) {
+    console.error("Error loading news:", err);
+  }
+}
+
+// Call function on page load
+document.addEventListener("DOMContentLoaded", loadNews);
+
+div.innerHTML = `
+  ${item.image ? `<img src="http://localhost:5000${item.image}" alt="${item.title}" style="width:100%">` : ""}
+  <h3>${item.title}</h3>
+  <p>${item.content}</p>
+  <small>Category: ${item.category} | ${new Date(item.createdAt).toLocaleString()}</small>
+`;
+
+</script>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>

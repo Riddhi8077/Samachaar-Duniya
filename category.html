@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samachaar Duniya | Latest News</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+
+<!-- =========================
+       TOP DATE & TIME BAR
+========================= -->
+<div class="date-time-bar">
+  <span id="liveDate"></span> | <span id="liveTime"></span>
+</div>
+
+  <!-- HEADER + BREAKING NEWS WRAPPER -->
+<div class="header-wrapper">
+  <header>
+    <div class="top-bar">
+      <img src="images/logo.png" alt="Samachaar Duniya Logo" class="logo">
+      <!-- Hamburger Menu Icon (Visible on Mobile) -->
+<div class="hamburger" onclick="toggleMenu()">
+  ☰
+</div>
+
+<button class="menu-toggle">&#9776;</button>
+<nav class="navbar">
+   <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="category.html?category=World">World</a></li>
+    <li><a href="category.html?category=Politics">Politics</a></li>
+    <li><a href="category.html?category=Sports">Sports</a></li>
+    <li><a href="category.html?category=Entertainment">Entertainment</a></li>
+    <li><a href="category.html?category=Technology">Technology</a></li>
+  </ul>
+</nav>
+
+
+      <!-- Search Bar -->
+    <form class="search-form">
+      <input type="text" placeholder="Search news..." />
+      <button type="submit">🔍</button>
+    </form>
+
+    <!-- Dark Mode Toggle -->
+<button class="dark-mode-toggle" id="darkModeToggle">🌙</button>
+
+  </div>
+</header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+     <!-- =========================
+       BREAKING NEWS TICKER
+========================= -->
+<div class="breaking-news-bar">
+      <li><a href="category.html?category=breaking-news-bar"></a></li>
+  <span class="breaking-label">Breaking:</span>
+  <marquee behavior="scroll" direction="left">
+    India Wins Test Series 3-1 against Australia | 
+    Stock Markets Rally Amid Economic Recovery | 
+    Bollywood’s New Blockbuster Crosses 100 Cr | 
+    Heavy Rainfall Expected in North India | 
+    AI Revolution: Big Tech Companies Compete
+  </marquee>
+</div>
+
+  <!-- Main Content for Category -->
+  <main class="main-content">
+    <h1 class="category-title">Category: <span id="categoryName"></span></h1>
+    
+    <section class="news-grid" id="categoryNewsGrid">
+      <!-- JS will insert filtered news here -->
+    </section>
+  </main>
+
+  <!-- Include your existing footer here -->
+  <footer>
+    <!-- Copy footer from index.html -->
+  </footer>
+
+  <script src="category.js"></script>
+</body>
+</html>

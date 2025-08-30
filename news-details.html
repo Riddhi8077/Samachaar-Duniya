@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samachaar Duniya - News Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+<div id="readingProgress"></div>
+
+
+  <!-- =========================
+       TOP DATE & TIME BAR
+========================= -->
+<div class="date-time-bar">
+  <span id="liveDate"></span> | <span id="liveTime"></span>
+</div>
+
+
+  <!-- HEADER + BREAKING NEWS WRAPPER -->
+<div class="header-wrapper">
+  <header>
+    <div class="top-bar">
+      <img src="images/logo.png" alt="Samachaar Duniya Logo" class="logo">
+      <!-- Hamburger Menu Icon (Visible on Mobile) -->
+<div class="hamburger" onclick="toggleMenu()">
+  ☰
+</div>
+
+<button class="menu-toggle">&#9776;</button>
+<nav class="navbar">
+   <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="category.html?category=World">World</a></li>
+    <li><a href="category.html?category=Politics">Politics</a></li>
+    <li><a href="category.html?category=Sports">Sports</a></li>
+    <li><a href="category.html?category=Entertainment">Entertainment</a></li>
+    <li><a href="category.html?category=Technology">Technology</a></li>
+  </ul>
+</nav>
+
+
+      <!-- Search Bar -->
+    <form class="search-form">
+      <input type="text" placeholder="Search news..." />
+      <button type="submit">🔍</button>
+    </form>
+
+    <!-- Dark Mode Toggle -->
+<button class="dark-mode-toggle" id="darkModeToggle">🌙</button>
+
+  </div>
+</header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+     <!-- =========================
+       BREAKING NEWS TICKER
+========================= -->
+<div class="breaking-news-bar">
+      <li><a href="category.html?category=breaking-news-bar"></a></li>
+  <span class="breaking-label">Breaking:</span>
+  <marquee behavior="scroll" direction="left">
+    India Wins Test Series 3-1 against Australia | 
+    Stock Markets Rally Amid Economic Recovery | 
+    Bollywood’s New Blockbuster Crosses 100 Cr | 
+    Heavy Rainfall Expected in North India | 
+    AI Revolution: Big Tech Companies Compete
+  </marquee>
+</div>
+
+
+<!-- ==============================
+     MAIN ARTICLE PAGE
+============================== -->
+<main class="article-page">
+
+  <!-- Main Article -->
+  <article class="main-article" data-category="sports">
+    <h1>Sports: India Wins the Test Series</h1>
+    <p class="article-meta">By Admin | January 31, 2025</p>
+    <img src="images/news1.webp" alt="News Image" class="article-image">
+    
+    <p>
+      Team India made history by winning the test series 3-1 against Australia. 
+      The series finale witnessed a thrilling match with extraordinary performances 
+      from both batters and bowlers. Experts say this win marks a new era in Indian cricket...
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae magna nec
+      purus luctus faucibus. Proin sit amet semper velit. Nullam vehicula feugiat ligula, 
+      vitae sagittis lacus gravida in...
+    </p>
+
+    <!-- Social Share Buttons -->
+    <div class="share-buttons">
+      <span>Share: </span>
+      <a href="#" class="facebook">Facebook</a>
+      <a href="#" class="twitter">Twitter</a>
+      <a href="#" class="whatsapp">WhatsApp</a>
+    </div>
+  </article>
+
+</main>
+
+<!-- ==============================
+     DYNAMIC RELATED ARTICLES
+============================== -->
+<section class="related-articles">
+  <h3>📰 Related Articles</h3>
+  <div class="related-grid" id="relatedGrid">
+    <!-- JS will inject related articles here dynamically -->
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Samachaar Duniya. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
